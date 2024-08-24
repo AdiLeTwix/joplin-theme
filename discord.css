@@ -1,0 +1,111 @@
+:root {
+    --background: rgb(49, 51, 57);
+    --grey: rgb(43, 45, 49);
+    --primary: #7289da;
+    --pale: rgb(242, 243, 245);
+    --pink: #FC0598;
+    --dark: rgb(30,31,34);
+}
+
+body {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background: var(--background);
+  color: var(--pale);
+	font-family: Ggsans,sans-serif;
+}
+
+.exported-note-title {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+}
+
+li {
+  list-style: square;
+}
+
+blockquote{
+  display:block;
+  background: var(--grey);
+  padding: 15px 2px 15px 35px;
+  position: relative;
+  
+  /*Font*/
+  font-size: 14px;
+  line-height: 1.2;
+  color:  var(--pale);
+
+  /*Borders*/
+  border-width: 4px;
+  border-left-style: solid;
+  margin-right: 2px;
+  border-radius: 4px;
+
+  /*Color border */
+  border-color: var(--pink);
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+blockquote > :first-child {
+    margin-top: 0;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+blockquote a {
+  color: var(--pink)
+}
+
+.table-of-contents {
+	/* background-color:white; */
+  background: var(--grey);
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+  border: 1px solid var(--pale);
+  /*uncoment if you want a floating TOC in your IDE*/
+	/*float:right;*/
+	padding: 0.25rem;
+	font-size: 15px;
+	line-height: 1.5rem;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+  padding: 20px;
+}
+
+.hljs {
+  background: var(--grey);
+  color: var(--pale);
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+.inline-code {
+  background-color: var(--grey);
+  color: var(--pale);
+  border-radius: 1px;
+  border: 1px solid var(--dark);
+  padding: 3px;
+}
+
+
+@media print {
+    body {
+        font-size: 12;
+    }
+	blockquote{
+		  font-size: 13;
+	}
+}
