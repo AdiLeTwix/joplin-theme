@@ -70,7 +70,7 @@ blockquote a {
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
   border: 1px solid var(--pale);
-  /*uncoment if you want a floating TOC in your IDE*/
+/*uncoment if you want a floating TOC in your IDE*/
 	/*float:right;*/
 	padding: 0.25rem;
 	font-size: 15px;
@@ -100,6 +100,21 @@ pre {
   padding: 3px;
 }
 
+img {
+  border-radius: 5px;
+}
+
+/*TABLE*/
+.jop-tinymce table th, table th {
+  background-color: var(--grey);
+  color: var(--pale);
+  border: 1px solid var(--dark);
+}
+
+.jop-tinymce table, table {
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
 
 @media print {
     body {
